@@ -137,10 +137,11 @@ li:last-child {
 
 .backgroundheader {
     background-image: url(images/seven-shooter-hPKTYwJ4FUo-unsplash.jpg);
+    background-blend-mode: screen;
     background-size: cover;
     background-color: #404040;
     background-position: center;
-    opacity: 0.7;
+  
 }
 
 .container {
