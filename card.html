@@ -1,4 +1,4 @@
-m<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,6 +9,14 @@ m<!DOCTYPE html>
             font-family: Arial, sans-serif;
             background-color: #f9f9f9;
             padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            width: 600px;
+            max-width: 100%;
+            padding: 40px;
+            box-sizing: border-box;
         }
         .certificate {
             background-color: #ffffff;
@@ -16,27 +24,45 @@ m<!DOCTYPE html>
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             padding: 20px;
             margin-bottom: 20px;
+            text-align: center;
         }
         .certificate img {
             max-width: 100%;
             height: auto;
+            border-radius: 50%; /* Makes the image circular */
         }
         .certificate h3 {
             margin-top: 10px;
+            font-size: 1.2em; /* Shrinks the text */
+        }
+        @media (max-width: 640px) {
+            .container {
+                padding: 20px;
+            }
+            .certificate h3 {
+                font-size: 1em; /* Further shrinks the text on smaller screens */
+            }
         }
     </style>
 </head>
 <body>
-    <div class="certificate">
-        <img src="exam-az101.png" alt="Azure Certificate">
-        <h3>Azure Certification</h3>
-        <p>Received my Azure certification for completing the AZ-900 exam.</p>
+    <div class="container">
+        <!-- Your picture -->
+        <div class="certificate">
+            <img src="path/to/your_picture.jpg" alt="My Picture">
+        </div>
+        <!-- Certificates -->
+        <div class="certificate">
+            <img src="path/to/azure_certificate.jpg" alt="Azure Certificate">
+            <h3>Azure Certification</h3>
+            <p>Received my Azure certification for completing the AZ-900 exam.</p>
+        </div>
+        <div class="certificate">
+            <img src="path/to/terraform_certificate.jpg" alt="Terraform Certificate">
+            <h3>Terraform Certification</h3>
+            <p>Successfully completed the Terraform Associate certification.</p>
+        </div>
+        <!-- Add more certificates here -->
     </div>
-    <div class="certificate">
-        <img src="/terraform_certificate.jpg" alt="Terraform Certificate">
-        <h3>Terraform Certification</h3>
-        <p>Successfully completed the Terraform Associate certification.</p>
-    </div>
-    <!-- Add more certificates here -->
 </body>
 </html>
